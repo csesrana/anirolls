@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-- Main background video Page -->
+    <section class="showcase">
+        <header>
+            <h2 class="logo">AniRolls</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="videoplayback.webm" muted loop autoplay></video>
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Watching Animes</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut corporis vero quos asperiores nulla.
+                Laboriosam a incidunt consequuntur iores beatae. Dignissimos voluptatem atque
+                repellat, dicta consequuntur dodolorum!</p>
+            <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/profile.php?id=100069057157262"><img src="facebook.png" alt=""></a>
+            </li>
+            <li><a href="https://twitter.com/SagarRa98030298"><img src="twitter.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/sagarrana_16/?hl=en"><img src="instagram.png" alt=""></a></li>
+            <li><a href="https://github.com/sagarrana16"><img src="github-logo.png" alt=""></a></li>
+        </ul>
+    </section>
+    <!-- Side Menu -->
+    <div class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Wallpapers</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <!-- menu javascript -->
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+    <!-- Home page -->
+    <div class="black section">
+        <a name="home"></a>
+        <h1>Anime is Dope</h1>
+        <h2>Anime contents</h2>
+        <div class="blackrow">
+            <div class="card">
+                <a href="shows.html" target="_blank">
+                    <div class="box">
+                        <img src="shows.gif" class="gifs">
+                        <h3>SHOWS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quo eos repudiandae nam
+                            officiis adipisci impedit sapiente, qui, dignissimos enim numquam minima omni.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="Movies.gif" class="gifs">
+                    <h3>MOVIES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quo eos repudiandae nam
+                        officiis adipisci impedit sapiente, qui, dignissimos enim numquam minima omnis</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="wallpaper.gif" class="gifs">
+                    <h3>Wallpapers</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quo eos repudiandae nam
+                        officiis adipisci impedit sapiente, qui, dignissimos enim numquam minima omni.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="popularity.gif" class="gifs">
+                    <h3>POPULARITY</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quo eos repudiandae nam
+                        officiis adipisci impedit sapiente, qui, dignissimos enim numquam minima omni.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card ke piche wala rang -->
+    <div class="white">
+        <h1>Its never ending...</h1>
+
+        <div>
+            <footer>
+                <div class="content">
+                    <div class="left box">
+                        <div class="upper">
+                            <div class="topic">About Me...</div>
+                            <p>My name is Sagar Rana. A student in Miet my Dream is to become a best in all class
+                                developer </p>
+                        </div>
+                        <div class="lower">
+                            <div class="topic">Contact me</div>
+                            <div class="phone">
+                                <a href="#"><i class="fas fa-phone-volume"></i>8630342564</a>
+                            </div>
+                            <div class="email">
+                                <a href="#"><i class="fas fa-envelope"></i>devil4works@gmail.com</a>
+                            </div>
+                            <div class="email">
+                                <a href="#"><i class="fas fa-envelope"></i>sagar.singh.cseai2020@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle box">
+                        <div class="topic">My sevices</div>
+                        <div><a href="#">Web Design, Development</a></div>
+
+                    </div>
+                    <div class="right box">
+                        <div class="topic">
+                            <h11>Check out My profile...</h11>
+
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/profile.php?id=100069057157262"><img
+                                            src="facebook.png" alt=""></a>
+                                </li>
+                                <li><a href="https://twitter.com/SagarRa98030298"><img src="twitter.png" alt=""></a>
+                                </li>
+                                <li><a href="https://www.instagram.com/sagarrana_16/?hl=en"><img src="instagram.png"
+                                            alt=""></a></li>
+                                <li><a href="https://github.com/sagarrana16"><img src="github-logo.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
