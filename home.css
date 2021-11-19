@@ -211,6 +211,7 @@
     border-right: white 2px solid;
     border-left: white 2px solid;
     border-bottom: transparent 2px solid;
+    border-radius: 10px;
     height: 400px;
     margin-left: 15%;
     margin-right: 15%;
@@ -218,6 +219,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .card{
     padding: 50px 25px;
     width: calc(26% - 20px);
@@ -258,7 +260,7 @@
 }
 .white{
     width: 100%;
-    height: 450px;
+    height: 200px;
     background-color: powderblue;
     padding-top: 150px;
 }
@@ -266,8 +268,30 @@
     text-align: center;
     color: crimson;
 }
-
-
+.circles_containers{
+    width: 100%;
+    height: 240px;
+    background-color: powderblue;
+    /* border-top: red 2px solid; */
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.extra_space{
+    background-color: powderblue;
+    width: 100%;
+    height: 50px;
+}
+.circles{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    cursor: pointer;
+    border-radius: 1000px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 50px;
+}
 
 @media screen and (max-width: 900px) {
     .black.section h2::after{
