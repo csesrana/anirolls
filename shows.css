@@ -53,24 +53,29 @@ body{
     color: #fff;
 }
  .container{
-     width: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px;
+    padding: 15px;
+
  }
  .card{
      position: relative;
-     width: 300px;
-     height: 420px;
+     width: 200px;
+     height: 280px;
      transition: 0.3s ease-out;
      background-color: #ff0066;
+     border-radius: 20px;
+     padding: 2px;
+     margin-bottom: 20px;
  }
  .card img
  {
      position: relative;
      width: 100%;
-     height: 300px;
+     height: 260px;
+     border-radius: 20px;
  }
  .card .imgbox img{
      position: absolute;
@@ -84,19 +89,22 @@ body{
      left: 0;
      bottom: 0;
      width: 100%;
-     height: 100px;
-     padding: 14%;
+     height: 50px;
+     padding: 10px;
      background: #ff0066;
+     /* background-image: linear-gradient(45deg,red, yellow); */
      transition: all 0.5s cubic-bezier(.48, -0.28, 0.41,1.4);
      box-sizing: border-box;
      overflow: hidden;
+     border-radius:10px;
  }
  .card:hover .content{
      width: 100%;
      height: 75%;
      left: 0;
      bottom: 0;
-     background: #ff0066b0;
+     /* background: #ff0066b0; */
+     background-image: linear-gradient(45deg,red, yellow,pink);
  }
  .content h2{
      text-align: center;
@@ -106,27 +114,42 @@ body{
      padding-top: 10px;
      font-size: 1.3em;
  }
- @media screen and (max-width: 900px){
+ @media screen and (max-width: 412px)
+ {
      .container{
          padding-top: 20px;
-         padding-left: 55px;
-         padding-right: 55px;
+         padding-left: 5px;
+         padding-right: 5px;
          padding-bottom: 30px;
          width: 90%;
+         display: flex;
      }
      .card{
         margin-bottom: 30px;
-        height: 300px;
+        height: 250px;
+        width: 170px;
+     }
+     .card img{
+       height: 240px;
      }
      .card .content{
-         height: 70px;
-     }
-        
-     }
+         height: 50px;
+     }  
      .content h2{
-        font-size: 2em;
-     }
-     
+       font-size: 1.3em; 
+      }     
+    }
+    @media screen and (max-width: 1080px){
+      .container{
+        padding-top: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 30px;
+        width: 90%;
+        display: flex;
+    }
+
+    }
  .social{
     position: absolute;
     bottom: 20px;
